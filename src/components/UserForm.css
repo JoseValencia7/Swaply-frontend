@@ -1,0 +1,131 @@
+/* ==== ESTILO GENERAL DEL BODY ==== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+  background: linear-gradient(to right, #c2f0c2, #c2e0f7, #b2d4f7); /* Degradado suave como fondo */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==== CONTENEDOR PRINCIPAL DEL FORMULARIO ==== */
+.container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra moderna */
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* ==== LOGO SUPERIOR ==== */
+.logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* ==== TÍTULO Y SUBTÍTULOS ==== */
+h1 {
+  margin: 10px 0;
+  font-size: 28px;
+  color: #000;
+}
+
+p {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 14px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* ==== FORMULARIO: ESTRUCTURA GENERAL ==== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+/* ==== ETIQUETAS DEL FORMULARIO ==== */
+label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+/* ==== CAMPOS DE ENTRADA ==== */
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+/* Efecto visual al enfocar campos */
+input:focus, select:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+/* ==== BOTÓN DE ENVÍO ==== */
+button {
+  background: #000;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Cambio de color al pasar el mouse */
+button:hover {
+  background: #333;
+}
+
+/* ==== MENSAJES DINÁMICOS DE VALIDACIÓN ==== */
+
+/* Mensaje de éxito */
+.mensaje.exito {
+  margin-top: 20px;
+  color: #2e8b57;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mensaje.exito::before {
+  content: "✔";
+  color: green;
+}
+
+/* Mensaje de error */
+.mensaje.error {
+  margin-top: 20px;
+  color: #cc0000;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mensaje.error::before {
+  content: "⚠️";
+  margin-right: 5px;
+}
+
